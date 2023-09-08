@@ -1,7 +1,9 @@
-
+import "./footer.scss"
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="footer">
+      <span>SpiritAdmin</span><span>C Spirit Tattoo Admin Dashboard</span>
+    </div>
   )
 }
 

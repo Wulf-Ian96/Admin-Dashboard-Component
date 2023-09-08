@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+.menu {
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: small;
+      font-weight: 200;
+      color: $soft-color;
+    }
+
+    .listItem{
+        display: flex;
+        align-items: center;
+    }
+
+    .listItemTitle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      // in scss using &:hover is like using the psuedo class in normal css. make sure it is nested inside though
+      &:hover {
+        background-color: $soft-bg;
+        border-radius: 5px;
+      }
+    }
+  }
+}
